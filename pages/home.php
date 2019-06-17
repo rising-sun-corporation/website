@@ -4,56 +4,72 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="static/css/master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="master.css">-->
-	<link rel="icon" href="static/media/favicon.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
     <title>[RSC] - Rising Sun Corporation</title>
+    <link rel="shortcut icon" href="static/media/RSC-LOGO.png">
+    <script src="static/js/main.js"></script>
   </head>
   <body>
     <video class="background-video"src="static/media/Stars.mp4" type="video/mp4" autoplay loop muted></video>
       <div class="wrapper">
-        <div class="header-container">
-          <h1>[RSC] - Rising Sun Corporation</h1>
-          <p>This is our Webbsite</p>
+          <img class="nav-logo" src="static/media/RSC-LOGO.png" alt="[RSC]-LOGO">
+          <div class="header-wrapper"><h1>[RSC] - Rising Sun Corporation</h1><h3 class="header-quote">Join today for a better tomorow</h3></div>
+        <div class="nav-bar"></div>
+        <div class="nav-bar-panel">
+          <a id="home-button" data-active="false" data-show="home" id="home-button" class="nav-button" href="#home" onclick="changeView('home')"><p>Home</p></a>
+          <a id="about-button" data-active="false" data-show="about" id="about-button" class="nav-button" href="#about" onclick="changeView('about')"><p>About Us</p></a>
+          <a id="service-button" data-active="false" data-show="service" id="service-button" class="nav-button" href="#service" onclick="changeView('service')"><p>Our Services</p></a>
+          <a id="partners-button" data-active="false" data-show="partners" id="partners-button" class="nav-button" href="#partners" onclick="changeView('partners')"><p>Partners</p></a>
+          <a id="join-button" data-active="false" data-show="join" id="join-button" class="nav-button" href="#join" onclick="changeView('join')"><p>Join The Ranks</p></a>
         </div>
-        <div class="main-container">
-          <div class="left">
-            <h1>About Us</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="content-wrapper">
+          <div id="home-page" class="content-page" data-active="false" data-show="home">
+            <h1>Hello and welcome!</h1>
+            <div>
+              <p>Hello fellow citizen, you are about to experience an advertisement for the Rising Sun Corporation.</p>
+              <p>Ever dreamed of living the good exo-skeleton life? Consider joining the Rising Sun Corporation!</p>
+              <p>The main goal of the Rising Sun Corporation is to establish economic stability and peace in the new sector. Our focus lies in extracting and selling goods to any clients and persons of interest. We rely on extraction, mining and guarding jobs to keep the Universe clean.</p>
+              <p>However, we sell our armed forces to the highest bidder for a reasonable price.  Additionally, we have a designated research and development unit that creates new means of warfare, weaponry, and space travel to ensure safety and balance in our area of influence.  We are open to alliance and partnership requests at any point in time.</p>
+              <p>If you like to join a highly organized group make an impact in the galaxy, we have the job for you.  From armed patron to ore extractor, our Corporation gives you a chance to fulfill whatever career you are dreaming of.</p>
+              <h2>Consider joining The Rising Sun Corporation today to make the new frontier a better place, your cozy quarters are waiting for you!</h3>
+            </div>
           </div>
-          <div class="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="about-page" class="content-page" data-active="false" data-show="about">
+            <h1>Title</h1>
+            <div>
+              General Stats: Focus: Economic and Militaristic Prosperity  Allegiance: Neutral Colour Scheme: Yellow, Black, White
+              <br>
+              Content. Fill me with SHIT!
+            </div>
           </div>
-          <div class="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="service-page" class="content-page" data-active="false" data-show="service">
+            <h1>Title</h1>
+              <div>
+                Content. Fill me with SHIT!
+              </div>
           </div>
-          <div class="left">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="partners-page" class="content-page" data-active="false" data-show="partners">
+            <h1>Title</h1>
+              <div>
+                Content. Fill me with SHIT!
+              </div>
           </div>
-          <div class="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="join-page" class="content-page" data-active="false" data-show="join">
+            <h1>Title</h1>
+              <div>
+                Content. Fill me with SHIT!
+                <br>
+                <br>
+                <p>Link to our Discord: <a href="https://discord.gg/cwBjB5n">https://discord.gg/cwBjB5n</a></p>
+              </div>
           </div>
         </div>
-      <div class="footer-container">
-        <div class="footer-text">
-          <p>Created by</p>
-          <p>[RSC-Engineer] Oscar</p>
-          <p>[RSC-CEO] Shepard</p>
-        </div>
-        <div class="media-container">
-          <a class="media_button" href="https://www.instagram.com/oscarf02/"><i class="fab fa-instagram"></i></a>
-          <a class="media_button" href="https://www.facebook.com/oscar.freij"><i class="fab fa-facebook-square"></i></a>
-          <a class="media_button" href="https://github.com/OscarFreij"><i class="fab fa-git-square"></i></a>
-          <a class="media_button" href="https://www.linkedin.com/in/oscar-freij-4a5690165"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="QR">
-          <img class="QR" src="static/media/src-image/QR-Special.png" alt="WHAT BROWSER ARE YOU USING?! REALLY?!">
-        </div>
+        <div class="credits">
+            <p>Website created by Oscar Freij</p>
+            <p>AKA [RSC-Engineer] Oscar</p>
+          </div>
+      <!--Cosmetics Start-->
+        <div class="cos-1"></div>
+      <!--Cosmetics End-->
       </div>
-    </div>
   </body>
 </html>
