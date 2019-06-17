@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="static/css/master.css">
+    <link rel="stylesheet" href="static/css/media-master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>[RSC] - Rising Sun Corporation</title>
     <link rel="shortcut icon" href="static/media/RSC-LOGO.png">
@@ -11,7 +12,9 @@
   <body>
     <video class="background-video"src="static/media/Stars.mp4" type="video/mp4" autoplay loop muted></video>
       <div class="wrapper">
-          <img class="nav-logo" src="static/media/RSC-LOGO.png" alt="[RSC]-LOGO">
+        <div class="nav-logo-div">
+        <img class="nav-logo" src="static/media/RSC-LOGO.png" alt="[RSC]-LOGO">
+        </div>
           <div class="header-wrapper"><h1>[RSC] - Rising Sun Corporation</h1><h3 class="header-quote">Join today for a better tomorow</h3></div>
         <div class="nav-bar"></div>
         <div class="nav-bar-panel">
@@ -68,7 +71,9 @@
             <p>AKA [RSC-Engineer] Oscar</p>
           </div>
       <!--Cosmetics Start-->
-        <div class="cos-1"></div>
+        <div class="cos cos-1"></div>
+        <div class="cos cos-2"></div>
+        <div class="cos cos-3"></div>
       <!--Cosmetics End-->
       </div>
   </body>

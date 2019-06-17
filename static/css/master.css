@@ -26,17 +26,10 @@ body {
 
 .background-video {
   position: fixed;
- }
- 
-/*
-.background-video {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
 }
-*/
+
 .wrapper {
   margin: 0px;
   position: absolute;
@@ -56,20 +49,6 @@ body {
   content:"”";
 }
 
-.credits {
-  display: flex;
-  flex-direction: column;
-  z-index: 4;
-  width: 100%;
-  height: 100%;
-  font-size: 0.6em;
-  word-wrap: break-word;
-  grid-column: menu-column;
-  grid-row: footer-row;
-  justify-content: center;
-  align-items: center;
-}
-
 .header-wrapper {
   padding-left: 1em;
   width: 100%;
@@ -80,7 +59,6 @@ body {
 
 .nav-bar {
   z-index: 2;
-  background-color: var(--primary-dim-background);
   grid-column: menu-column;
   grid-row: header-row / -1;
   width: 100%;
@@ -113,63 +91,71 @@ body {
 }
 
 .nav-button[data-show="home"] {
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(255, 0, 0, 0.2);
 }
 
 .nav-button[data-show="about"] {
-  background: rgba(255, 102, 0, 0.1);
+  background: rgba(255, 102, 0, 0.2);
 }
 
 .nav-button[data-show="service"] {
-  background: rgba(255, 251, 0, 0.1);
+  background: rgba(255, 251, 0, 0.2);
 }
 
 .nav-button[data-show="partners"] {
-  background: rgba(166, 255, 0, 0.1);
+  background: rgba(166, 255, 0, 0.2);
 }
 
 .nav-button[data-show="join"] {
-  background: rgba(0, 255, 170, 0.1);
+  background: rgba(0, 255, 170, 0.2);
 }
 
 .nav-button[data-show="home"]:hover {
-  background: rgba(255, 0, 0, 0.3);
+  background: rgba(255, 0, 0, 0.4);
 }
 
 .nav-button[data-show="about"]:hover {
-  background: rgba(255, 102, 0, 0.3);
+  background: rgba(255, 102, 0, 0.4);
 }
 
 .nav-button[data-show="service"]:hover {
-  background: rgba(255, 251, 0, 0.3);
+  background: rgba(255, 251, 0, 0.4);
 }
 
 .nav-button[data-show="partners"]:hover {
-  background: rgba(166, 255, 0, 0.3);
+  background: rgba(166, 255, 0, 0.4);
 }
 
 .nav-button[data-show="join"]:hover {
-  background: rgba(0, 255, 170, 0.3);
+  background: rgba(0, 255, 170, 0.4);
 }
 
 .nav-button[data-show="home"][data-active="true"] {
-  background: rgba(255, 0, 0, 0.3);
+  background: rgba(255, 0, 0, 0.4);
 }
 
 .nav-button[data-show="about"][data-active="true"] {
-  background: rgba(255, 102, 0, 0.3);
+  background: rgba(255, 102, 0, 0.4);
 }
 
 .nav-button[data-show="service"][data-active="true"] {
-  background: rgba(255, 251, 0, 0.3);
+  background: rgba(255, 251, 0, 0.4);
 }
 
 .nav-button[data-show="partners"][data-active="true"] {
-  background: rgba(166, 255, 0, 0.3);
+  background: rgba(166, 255, 0, 0.4);
 }
 
 .nav-button[data-show="join"][data-active="true"] {
-  background: rgba(0, 255, 170, 0.3);
+  background: rgba(0, 255, 170, 0.4);
+}
+
+.nav-logo-div {
+  width: 100%;
+  height: 100%;
+  grid-column: menu-column;
+  grid-row: header-row;
+  object-fit: contain
 }
 
 .nav-logo {
@@ -228,14 +214,39 @@ body {
   display: grid;
 }
 
-
-.cos-1 {
+.cos {
   background-color: var(--primary-dim-background);
   height: 100%;
   width: 100%;
   border: 0px;
+}
+
+.cos-1 {
   border-radius: 0 0 100% 0;
   grid-column: NOFILL-2;
   grid-row: header-row;
 }
 
+.cos-2 {
+  grid-column: menu-column;
+  grid-row: header-row / content-row;
+}
+
+.cos-3 {
+  grid-column: menu-column;
+  grid-row: footer-row;
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  font-size: 0.6em;
+  word-wrap: break-word;
+  grid-column: menu-column;
+  grid-row: footer-row;
+  justify-content: center;
+  align-items: center;
+}
