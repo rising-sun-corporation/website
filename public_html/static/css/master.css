@@ -22,6 +22,7 @@ body {
   font-family: Orbitron;
   color: yellow;
   margin: 0px;
+  background-color: black;
 }
 
 .background-video {
@@ -98,7 +99,7 @@ body {
   background: rgba(255, 102, 0, 0.2);
 }
 
-.nav-button[data-show="service"] {
+.nav-button[data-show="mission"] {
   background: rgba(255, 251, 0, 0.2);
 }
 
@@ -118,7 +119,7 @@ body {
   background: rgba(255, 102, 0, 0.4);
 }
 
-.nav-button[data-show="service"]:hover {
+.nav-button[data-show="mission"]:hover {
   background: rgba(255, 251, 0, 0.4);
 }
 
@@ -138,7 +139,7 @@ body {
   background: rgba(255, 102, 0, 0.4);
 }
 
-.nav-button[data-show="service"][data-active="true"] {
+.nav-button[data-show="mission"][data-active="true"] {
   background: rgba(255, 251, 0, 0.4);
 }
 
@@ -181,7 +182,7 @@ body {
   color: white;
   font-size: 1.2em;
   display: none;
-  grid-template-rows: [title] 1fr [content-row] 5fr;
+  grid-template-rows: [title] 0.5fr [content-row] 3fr;
   position: relative;
   z-index: 6;
   height: 100%;
@@ -189,6 +190,7 @@ body {
   padding-left: 1em;
   border-left: none;
   border-radius: 0 25px 25px 0;
+  line-height: 1.6;
 }
 .content-page[data-show="home"] {
   background: rgba(255, 0, 0, 0.4);
@@ -198,7 +200,7 @@ body {
   background: rgba(255, 102, 0, 0.4);
 }
 
-.content-page[data-show="service"] {
+.content-page[data-show="mission"] {
   background: rgba(255, 251, 0, 0.4);
 }
 
